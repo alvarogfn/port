@@ -16,7 +16,7 @@
     align-items: center;
     flex-flow: column nowrap;
     padding: 3rem 1rem 1rem 1rem;
-    row-gap: 1rem;
+    row-gap: 1.5rem;
   }
   img {
     width: 200px;

@@ -29,6 +29,7 @@
     flex-flow: column nowrap;
     row-gap: 0.7rem;
     font-size: px-to-rem(15px);
+    padding: 0 0.25rem;
   }
 
   p {

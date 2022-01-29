@@ -16,7 +16,8 @@
 
     h1 {
       font-family: "Ubuntu mono", "ubuntu", "Roboto", sans-serif;
-      font-size: px-to-rem(30px);
+      font-size: px-to-rem(36px);
+      text-align: center;
     }
 
     p {
