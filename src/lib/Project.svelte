@@ -20,9 +20,9 @@
   <footer>
     <nav>
       <ul>
-        <li class="framework">{framework}</li>
-        <li class="code"><a href={repo}>código</a></li>
-        <li class="website"><a href={website}>website</a></li>
+        <li><span class="framework">{framework}</span></li>
+        <li><a class="code" href={repo}>código</a></li>
+        <li><a class="website" href={website}>website</a></li>
       </ul>
     </nav>
   </footer>
@@ -70,42 +70,51 @@
 
     transition: 200ms;
 
-    height: calc(125px + 20vw);
+    height: calc(125px + 22.5vw);
     width: 100%;
 
     border: 5px solid var(--white);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-    &:hover {
-      scale: 1.025;
+    &:hover,
+    &:active {
+      scale: 1.1;
     }
   }
 
   ul {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    column-gap: 0.5rem;
   }
 
   li {
-    cursor: default;
+    text-transform: uppercase;
 
     color: rgba($color: $white, $alpha: 0.5);
+
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: bold;
+    font-size: px-to-rem(17px);
+  }
+
+  a,
+  span {
+    cursor: pointer;
+
     display: flex;
     align-items: center;
+    justify-content: center;
 
     height: 30px;
 
-    padding-left: 20px;
-
-    text-transform: uppercase;
-    font-family: "Ubuntu Mono", monospace;
-    font-weight: bold;
+    padding-left: 1.3rem;
 
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 15px 15px;
+    background-size: 17px 17px;
 
     &.framework {
       background-image: url("../assets/framework.svg");

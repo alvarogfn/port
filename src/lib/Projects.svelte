@@ -16,7 +16,7 @@
   let get = getProjects();
 </script>
 
-<section>
+<section class="container">
   <p>
     Eu amo desenvolver softwares, e ver meu trabalho ajudar é uma sensação
     incrível!
@@ -50,6 +50,11 @@
   ul {
     display: flex;
     flex-flow: column nowrap;
-    row-gap: 1.5rem;
+    row-gap: 2rem;
+  }
+
+  .container {
+    width: calc(100% - 15px);
+    margin: 0 auto;
   }
 </style>
