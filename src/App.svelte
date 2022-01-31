@@ -2,13 +2,13 @@
   import Aboutme from "./lib/Aboutme.svelte";
   import Header from "./lib/Header.svelte";
   import Projects from "./lib/Projects.svelte";
-  import Separator from "./lib/Separator.svelte";
+  import Separator from "./lib/utils/Separator.svelte";
 </script>
 
-<div class="container">
+<div>
   <Header />
   <Separator />
-  <main>
+  <main class="main">
     <Aboutme />
     <Separator />
     <Projects />
@@ -16,7 +16,6 @@
 </div>
 
 <style lang="scss" global>
-
   :root {
     --white: #f2f2f2;
     --black: #262626;
@@ -49,8 +48,8 @@
     color: inherit;
   }
 
-  .container {
-    width: calc(100% - 15px);
+  .main {
+    width: calc(100% - 30px);
     margin: 0 auto;
   }
 </style>

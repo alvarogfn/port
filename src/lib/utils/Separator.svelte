@@ -1,5 +1,5 @@
 <script>
-  import separator from "../assets/separator.svg";
+  import separator from "../../assets/separator.svg";
 </script>
 
 <div>

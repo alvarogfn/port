@@ -44,7 +44,7 @@
     font-style: italic;
     text-align: right;
     font-size: px-to-rem(14px);
-    margin-bottom: 15px;
+    margin: 15px 5px 25px;
   }
 
   ul {

@@ -70,7 +70,7 @@
 
     transition: 200ms;
 
-    height: 200px;
+    height: calc(125px + 20vw);
     width: 100%;
 
     border: 5px solid var(--white);
