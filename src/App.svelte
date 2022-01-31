@@ -1,6 +1,7 @@
 <script>
   import Aboutme from "./lib/Aboutme.svelte";
   import Header from "./lib/Header.svelte";
+  import Projects from "./lib/Projects.svelte";
   import Separator from "./lib/Separator.svelte";
 </script>
 
@@ -10,10 +11,12 @@
   <main>
     <Aboutme />
     <Separator />
+    <Projects />
   </main>
 </div>
 
 <style lang="scss" global>
+
   :root {
     --white: #f2f2f2;
     --black: #262626;
@@ -33,6 +36,17 @@
 
   img {
     width: 100%;
+  }
+
+  ul,
+  li,
+  ol {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 
   .container {
