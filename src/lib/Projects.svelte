@@ -7,7 +7,7 @@
   onMount(async () => {});
 
   async function getProjects() {
-    const response = await fetch("http://localhost:8080/projects");
+    const response = await fetch("http://192.168.0.120:8080/projects");
     // if (response.status !== 200) throw new Error("oi");
     const body = await response.json();
     return body;
@@ -26,7 +26,7 @@
       <Loading />
     {:then projects}
       <ul>
-        {#each projects as project, i}
+        {#each projects as project}
           <li>
             <Project {...project} />
           </li>
