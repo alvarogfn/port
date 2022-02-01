@@ -1,12 +1,12 @@
 <script>
+  import breakLink from "../assets/break.svg";
+
   export let name;
   export let description;
-  export let img;
+  export let img = breakLink;
   export let framework;
   export let repo;
   export let website;
-
-  import breakLink from "../assets/break.svg";
 </script>
 
 <div class="container">
