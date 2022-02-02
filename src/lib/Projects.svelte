@@ -4,7 +4,7 @@
   import Loading from "./utils/Loading.svelte";
 
   async function getProjects() {
-    const response = await fetch("https://alvarogfn.github.io/port/db.json");
+    const response = await fetch("https://alvarogfn.github.io/port/projects.json");
     // if (response.status !== 200) throw new Error("oi");
     const body = await response.json();
     return body;
