@@ -211,4 +211,16 @@
       }
     }
   }
+
+  @media screen and (min-width: 1080px) {
+    .container {
+      grid-template-columns: 3fr 5fr;
+      grid-template-rows: 1fr minmax(100px, auto) 1fr;
+      column-gap: 3rem;
+    }
+
+    img {
+      min-height: 350px;
+    }
+  }
 </style>

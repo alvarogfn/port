@@ -58,6 +58,8 @@
   @media screen and (min-width: 744px) {
     .container {
       margin-top: 30px;
+      min-width: 700px;
+
       width: calc(100% - 50px);
     }
 
@@ -66,7 +68,22 @@
     }
 
     ul {
+      min-width: 600px;
+      width: calc(80%);
+      margin: 0 auto;
       row-gap: 3.2rem;
+    }
+  }
+
+  @media screen and (min-width: 1080px) {
+    .container {
+      min-width: 670px;
+      width: 1200px;
+    }
+
+    ul {
+      margin-top: 50px;
+      row-gap: 5rem;
     }
   }
 </style>
