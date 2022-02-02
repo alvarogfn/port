@@ -1,61 +1,61 @@
 [
-  {
-    "name": "Discord Webhook Twitter Tracker",
-    "description": "Um bot que faz streaming de tweets usando a API do twitter e posta no Discord com um Embed usando webhooks.",
-    "framework": {
-      "name": "Dart",
-      "url": "https://dart.dev/"
-    },
-    "repo": "https://github.com/alvarogfn/discord-webhook-twitter-tracker",
-    "img": "https://imgur.com/gqDEITM.png"
-  },
-  {
-    "name": "Dashboard",
-    "description": "Uma plataforma de gestão e gerenciamento de atendimentos, clientes e dividas para um salão de beleza.",
-    "framework": {
-      "name": "React.js",
-      "url": "https://pt-br.reactjs.org/"
-    },
-    "img": "https://imgur.com/Xc6f0Tn.gif"
-  },
-  {
-    "name": "FrontEndMentor: Social Proof Section",
-    "description": "Exercicio newbie do frontendmentor:\n A criação de uma landing page apresentativa usando SCSS e HTML",
-    "framework": {
-      "name": "HTML/SCSS",
-    },
-    "repo": "https://github.com/alvarogfn/Social-proof-section/",
-    "website": "https://alvarogfn.github.io/Social-proof-section/",
-    "img": "https://i.imgur.com/GEla9Wj.jpg"
-  },
-  {
-    "name": "FrontEndMentor: 3 column preview card component",
-    "description": "Exercicio newbie do frontendmentor:\n A criação de uma landing page apresentativa usando SCSS e HTML",
-    "framework": {
-      "name": "HTML/SCSS",
-    },
-    "repo": "https://github.com/alvarogfn/3-column-preview-card-component/",
-    "website": "https://alvarogfn.github.io/3-column-preview-card-component/",
-    "img": "https://i.imgur.com/W0meReN.jpg"
-  },
-  {
-    "name": "FrontEndMentor: Four Card Feature Section",
-    "description": "Exercicio newbie do frontendmentor:\n A criação de uma landing page responsiva usando SCSS e HTML",
-    "framework": {
-      "name": "HTML/SCSS",
-    },
-    "repo": "https://github.com/alvarogfn/four-card-feature-section/",
-    "website": "https://alvarogfn.github.io/four-card-feature-section/",
-    "img": "https://i.imgur.com/rJwOvkx.jpg"
-  },
-  {
-    "name": "FrontEndMentor: Fylo data storage component",
-    "description": "Exercicio newbie do frontendmentor: A criação de uma barra de armazenamento responsiva usando SCSS e HTML",
-    "framework": {
-      "name": "HTML/SCSS",
-    },
-    "repo": "https://github.com/alvarogfn/Fylo-data-storage-component/",
-    "website": "https://alvarogfn.github.io/Fylo-data-storage-component/",
-    "img": "https://i.imgur.com/56kUE6N.jpg"
-  }
+   {
+      "name":"Discord Webhook Twitter Tracker",
+      "description":"Um bot que faz streaming de tweets usando a API do twitter e posta no Discord com um Embed usando webhooks.",
+      "framework":{
+         "name":"Dart",
+         "url":"https://dart.dev/"
+      },
+      "repo":"https://github.com/alvarogfn/discord-webhook-twitter-tracker",
+      "img":"https://imgur.com/gqDEITM.png"
+   },
+   {
+      "name":"Dashboard",
+      "description":"Uma plataforma de gestão e gerenciamento de atendimentos, clientes e dividas para um salão de beleza.",
+      "framework":{
+         "name":"React.js",
+         "url":"https://pt-br.reactjs.org/"
+      },
+      "img":"https://imgur.com/Xc6f0Tn.gif"
+   },
+   {
+      "name":"FrontEndMentor: Social Proof Section",
+      "description":"Exercicio newbie do frontendmentor:\n A criação de uma landing page apresentativa usando SCSS e HTML",
+      "framework":{
+         "name":"HTML/SCSS"
+      },
+      "repo":"https://github.com/alvarogfn/Social-proof-section/",
+      "website":"https://alvarogfn.github.io/Social-proof-section/",
+      "img":"https://i.imgur.com/GEla9Wj.jpg"
+   },
+   {
+      "name":"FrontEndMentor: 3 column preview card component",
+      "description":"Exercicio newbie do frontendmentor:\n A criação de uma landing page apresentativa usando SCSS e HTML",
+      "framework":{
+         "name":"HTML/SCSS"
+      },
+      "repo":"https://github.com/alvarogfn/3-column-preview-card-component/",
+      "website":"https://alvarogfn.github.io/3-column-preview-card-component/",
+      "img":"https://i.imgur.com/W0meReN.jpg"
+   },
+   {
+      "name":"FrontEndMentor: Four Card Feature Section",
+      "description":"Exercicio newbie do frontendmentor:\n A criação de uma landing page responsiva usando SCSS e HTML",
+      "framework":{
+         "name":"HTML/SCSS"
+      },
+      "repo":"https://github.com/alvarogfn/four-card-feature-section/",
+      "website":"https://alvarogfn.github.io/four-card-feature-section/",
+      "img":"https://i.imgur.com/rJwOvkx.jpg"
+   },
+   {
+      "name":"FrontEndMentor: Fylo data storage component",
+      "description":"Exercicio newbie do frontendmentor: A criação de uma barra de armazenamento responsiva usando SCSS e HTML",
+      "framework":{
+         "name":"HTML/SCSS"
+      },
+      "repo":"https://github.com/alvarogfn/Fylo-data-storage-component/",
+      "website":"https://alvarogfn.github.io/Fylo-data-storage-component/",
+      "img":"https://i.imgur.com/56kUE6N.jpg"
+   }
 ]
