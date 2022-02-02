@@ -4,9 +4,9 @@
   export let name;
   export let description;
   export let img = breakLink;
-  export let framework;
-  export let repo;
-  export let website;
+  export let framework = null;
+  export let repo = null;
+  export let website = null;
 </script>
 
 <section class="container">
@@ -15,19 +15,42 @@
   <img src={img} alt={name} />
   <nav>
     <ul>
-      <li><span class="framework">{framework}</span></li>
       <li>
-        <a target="_blank" rel="norefferer noopener" class="code" href={repo}
-          >código</a
-        >
+        {#if framework.url}
+          <a
+            href={framework.url}
+            target="_blank"
+            rel="norefferer noopener"
+            class="framework">{framework.name}</a
+          >
+        {:else if framework.name}
+          <span class="framework">{framework.name}</span>
+        {:else}
+          <span class="framework">Não informado</span>
+        {/if}
       </li>
       <li>
-        <a
-          class="website"
-          href={website}
-          target="_blank"
-          rel="norefferer noopener">website</a
-        >
+        {#if repo}
+          <a target="_blank" rel="norefferer noopener" class="code" href={repo}>
+            código
+          </a>
+        {:else}
+          <span class="code">código</span>
+        {/if}
+      </li>
+      <li>
+        {#if website}
+          <a
+            class="website"
+            href={website}
+            target="_blank"
+            rel="norefferer noopener"
+          >
+            website
+          </a>
+        {:else}
+          <span class="website">website</span>
+        {/if}
       </li>
     </ul>
   </nav>
@@ -99,8 +122,6 @@
   li {
     text-transform: uppercase;
 
-    color: rgba($color: $white, $alpha: 0.5);
-
     font-family: "Ubuntu Mono", monospace;
     font-weight: bold;
     font-size: px-to-rem(17px);
@@ -108,19 +129,16 @@
 
   a,
   span {
-    cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
 
-    height: 30px;
-
-    padding-left: 1.3rem;
-
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 17px 17px;
+    height: 30px;
+
+    padding-left: 1.4rem;
 
     &.framework {
       background-image: url("../assets/framework.svg");
@@ -131,19 +149,27 @@
     &.website {
       background-image: url("../assets/website.svg");
     }
+  }
+
+  a {
+    cursor: pointer;
 
     transition: 200ms;
-
+    color: var(--white);
+    filter: brightness(0) invert(0.95);
     &:hover {
       scale: 1.05;
     }
+  }
+  span {
+    filter: brightness(0) invert(1) opacity(0.5);
   }
 
   @media screen and (min-width: 744px) {
     .container {
       display: grid;
       grid-template-columns: 4fr 3fr;
-      grid-template-rows: 70px 70px 40px;
+      grid-template-rows: 70px minmax(50px, auto) 40px;
       column-gap: 2rem;
     }
 
@@ -168,18 +194,20 @@
       grid-column: 2 / 3;
       grid-row: 1 / 4;
 
-      height: 100%;
-      min-height: initial;
+      min-width: 150px;
+      min-height: 150px;
 
       width: 100%;
+      height: 180px;
+
+      max-height: 100%;
+      max-width: 100%;
 
       align-self: center;
       justify-self: center;
 
-
       &:hover {
         object-fit: contain;
-
       }
     }
   }
