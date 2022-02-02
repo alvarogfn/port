@@ -69,8 +69,9 @@
     object-fit: cover;
 
     transition: 200ms;
-
-    height: calc(125px + 22.5vw);
+    
+    min-height: 225px;
+    height: 50vw;
     width: 100%;
 
     border: 5px solid var(--white);
@@ -78,7 +79,7 @@
 
     &:hover,
     &:active {
-      scale: 1.1;
+      scale: 1.05;
     }
   }
 
