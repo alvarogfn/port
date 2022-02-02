@@ -1,10 +1,7 @@
 <script>
-  import { onMount } from "svelte";
   import Project from "./Project.svelte";
   import Broken from "./utils/Broken.svelte";
   import Loading from "./utils/Loading.svelte";
-
-  onMount(async () => {});
 
   async function getProjects() {
     const response = await fetch("http://192.168.0.120:8080/projects");
@@ -56,5 +53,20 @@
   .container {
     width: calc(100% - 15px);
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: 744px) {
+    .container {
+      margin-top: 30px;
+      width: calc(100% - 50px);
+    }
+
+    p {
+      font-size: px-to-rem(18px);
+    }
+
+    ul {
+      row-gap: 3.2rem;
+    }
   }
 </style>

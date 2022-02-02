@@ -9,24 +9,29 @@
   export let website;
 </script>
 
-<div class="container">
-  <header>
-    <h1>{name}</h1>
-  </header>
-  <main>
-    <p>{description}</p>
-    <img src={img} alt={name} />
-  </main>
-  <footer>
-    <nav>
-      <ul>
-        <li><span class="framework">{framework}</span></li>
-        <li><a class="code" href={repo}>código</a></li>
-        <li><a class="website" href={website}>website</a></li>
-      </ul>
-    </nav>
-  </footer>
-</div>
+<section class="container">
+  <h1>{name}</h1>
+  <p>{description}</p>
+  <img src={img} alt={name} />
+  <nav>
+    <ul>
+      <li><span class="framework">{framework}</span></li>
+      <li>
+        <a target="_blank" rel="norefferer noopener" class="code" href={repo}
+          >código</a
+        >
+      </li>
+      <li>
+        <a
+          class="website"
+          href={website}
+          target="_blank"
+          rel="norefferer noopener">website</a
+        >
+      </li>
+    </ul>
+  </nav>
+</section>
 
 <style lang="scss">
   @use "../utils.scss" as *;
@@ -69,7 +74,7 @@
     object-fit: cover;
 
     transition: 200ms;
-    
+
     min-height: 225px;
     height: 50vw;
     width: 100%;
@@ -131,6 +136,51 @@
 
     &:hover {
       scale: 1.05;
+    }
+  }
+
+  @media screen and (min-width: 744px) {
+    .container {
+      display: grid;
+      grid-template-columns: 4fr 3fr;
+      grid-template-rows: 70px 70px 40px;
+      column-gap: 2rem;
+    }
+
+    h1 {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      align-self: end;
+    }
+
+    p {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      align-self: start;
+    }
+
+    nav {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    img {
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+
+      height: 100%;
+      min-height: initial;
+
+      width: 100%;
+
+      align-self: center;
+      justify-self: center;
+
+
+      &:hover {
+        object-fit: contain;
+
+      }
     }
   }
 </style>

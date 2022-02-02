@@ -1,17 +1,36 @@
 <section>
   <p class="p-italic">Um pouco sobre mim...</p>
+
+  <p>Olá, tudo bem?</p>
+
   <p>
-    Olá, meu nome é <strong>Álvaro Guimarães</strong>, sou um estudante de
-    <strong>Sistemas de Informação</strong> pela <strong>UniAtenas</strong> e
-    tenho como objetivo ingressar no mercado como
-    <strong>front-end Developer</strong>.
+    Eu tive meu primeiro contato com a área de <strong>desenvolvimento</strong>
+    na infância, em 2012 / 2013. Costumava passar meu tempo elaborando páginas de
+    <strong>HTML/CSS</strong>
+    para perfis em blogs e forums. E nessa mesma época, tive contato com a
+    criação de
+    <strong>chatbots em python</strong>.
   </p>
   <p>
-    Sou uma pessoa <strong>curiosa</strong>, <strong>criativa</strong>,
-    <strong>dedicada</strong>
-    e com vontade de <strong>melhorar a cada dia mais</strong>. Sempre à busca
-    de <strong>novas tecnologias</strong> e novos meios de
-    <strong>resolver problemas</strong>.
+    Sempre fiquei maravilhado ao ver como <strong>pequenas coisas</strong> podem
+    <strong>se tornar</strong>
+    coisas ainda maiores e <strong>fazer tanta diferença</strong> na vida das pessoas.
+  </p>
+  <p>
+    Hoje, eu estudo as tecnologias <strong>React.js</strong>,
+    <strong>Vue.js</strong>,
+    <strong>Svelte</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>,
+    <strong>Dart</strong>
+    e <strong>Flutter</strong>
+    de forma autodidata e estou cursando <strong>Sistemas de Informação</strong>
+    na UniAtenas.
+  </p>
+
+  <p>
+    Meu <strong>objetivo</strong> para o próximo ano é conseguir ter meu
+    <strong>primeiro estágio</strong>
+    na área como <strong>front-end</strong> e avançar minha habilidade em
+    <strong>inglês até a fluência</strong>.
   </p>
 </section>
 
@@ -40,5 +59,15 @@
   strong {
     font-family: "Ubuntu";
     font-weight: bold;
+  }
+
+  @media screen and (min-width: 744px) {
+    p {
+      font-size: px-to-rem(18px);
+      margin: 0.5rem 0;
+    }
+    section {
+      padding: 0 4rem;
+    }
   }
 </style>

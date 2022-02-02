@@ -11,7 +11,12 @@
   <ul>
     {#each app as social}
       <li>
-        <a class={social} href={link[social]}>{social}</a>
+        <a
+          target="_blank"
+          rel="norefferer noopener"
+          class={social}
+          href={link[social]}>{social}</a
+        >
       </li>
     {/each}
   </ul>
@@ -56,5 +61,12 @@
 
   .github {
     background-image: url("../assets/github.svg");
+  }
+
+  @media screen and (min-width: 744px) {
+    ul {
+      width: 30%;
+      margin: 0 auto;
+    }
   }
 </style>

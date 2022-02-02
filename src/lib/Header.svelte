@@ -22,4 +22,10 @@
     width: 200px;
     box-shadow: 0 0 0 7px var(--black), 0 0 0 10px var(--white);
   }
+
+  @media screen and (min-width: 744px) {
+    img {
+      width: 250px;
+    }
+  }
 </style>

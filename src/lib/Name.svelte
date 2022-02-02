@@ -13,16 +13,26 @@
     color: var(--white);
     display: flex;
     flex-flow: column nowrap;
+  }
 
+  h1 {
+    font-family: "Ubuntu mono", "ubuntu", "Roboto", sans-serif;
+    font-size: px-to-rem(36px);
+    text-align: center;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: px-to-rem(18px);
+  }
+
+  @media screen and (min-width: 744px) {
     h1 {
-      font-family: "Ubuntu mono", "ubuntu", "Roboto", sans-serif;
-      font-size: px-to-rem(36px);
-      text-align: center;
+      font-size: px-to-rem(46px);
     }
 
     p {
-      font-weight: 300;
-      font-size: px-to-rem(18px);
+      font-size: px-to-rem(22px);
     }
   }
 </style>

@@ -1,6 +1,5 @@
 <script>
   import Social from "./Social.svelte";
-  import emailIcon from "../assets/email.svg";
   let email = "Alvarogfn@protonmail.com";
 </script>
 
@@ -12,7 +11,13 @@
   </p>
 </section>
 <section class="email">
-  <p><a href="mailto:alvarogfn@protonmail.com">{email}</a></p>
+  <p>
+    <a
+      target="_blank"
+      rel="norefferer noopener"
+      href="mailto:alvarogfn@protonmail.com">{email}</a
+    >
+  </p>
 </section>
 <section>
   <Social />
@@ -46,5 +51,11 @@
     margin: 3rem 0;
 
     color: var(--black);
+  }
+
+  @media screen and (min-width: 744px) {
+    .email {
+      font-size: px-to-rem(22px);
+    }
   }
 </style>
