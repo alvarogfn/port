@@ -9,7 +9,7 @@
   export let website = null;
 </script>
 
-<section class="container">
+<section>
   <h1>{name}</h1>
   <p>{description}</p>
   <img src={img} alt={name} />
@@ -65,10 +65,10 @@
     }
   }
 
-  .container {
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 0.5rem;
+  section {
+    display: grid;
+    grid-template-rows: 50px 100px 250px 50px;
+    align-items: center;
   }
 
   h1 {
@@ -91,23 +91,30 @@
   p {
     font-weight: 300;
     margin-bottom: 1rem;
+    max-height: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   img {
     object-fit: cover;
 
+    width: 100%;
+    height: 100%;
+
     transition: 200ms;
 
-    min-height: 225px;
-    height: 50vw;
-    width: 100%;
+    margin-bottom: 0.5rem;
 
-    border: 5px solid var(--white);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    align-self: center;
+    justify-self: center;
+
+    border: 0.25rem solid var(--white);
 
     &:hover,
     &:active {
       scale: 1.05;
+      object-fit: contain;
     }
   }
 
@@ -161,66 +168,9 @@
       scale: 1.05;
     }
   }
+
   span {
     filter: brightness(0) invert(1) opacity(0.5);
   }
 
-  @media screen and (min-width: 744px) {
-    .container {
-      display: grid;
-      grid-template-columns: 4fr 3fr;
-      grid-template-rows: 70px minmax(50px, auto) 40px;
-      column-gap: 2rem;
-    }
-
-    h1 {
-      grid-row: 1 / 2;
-      grid-column: 1 / 2;
-      align-self: end;
-    }
-
-    p {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3;
-      align-self: start;
-    }
-
-    nav {
-      grid-column: 1 / 2;
-      grid-row: 3 / 4;
-    }
-
-    img {
-      grid-column: 2 / 3;
-      grid-row: 1 / 4;
-
-      min-width: 150px;
-      min-height: 150px;
-
-      width: 100%;
-      height: 180px;
-
-      max-height: 100%;
-      max-width: 100%;
-
-      align-self: center;
-      justify-self: center;
-
-      &:hover {
-        object-fit: contain;
-      }
-    }
-  }
-
-  @media screen and (min-width: 1080px) {
-    .container {
-      grid-template-columns: 3fr 5fr;
-      grid-template-rows: 1fr minmax(100px, auto) 1fr;
-      column-gap: 3rem;
-    }
-
-    img {
-      min-height: 350px;
-    }
-  }
 </style>

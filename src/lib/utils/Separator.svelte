@@ -9,6 +9,6 @@
 <style>
   div {
     width: 120px;
-    margin: 0.5rem auto;
+    margin: 2rem auto;
   }
 </style>

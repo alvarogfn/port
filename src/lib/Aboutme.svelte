@@ -7,8 +7,8 @@
     Eu tive meu primeiro contato com a área de <strong>desenvolvimento</strong>
     na infância, em 2012 / 2013. Costumava passar meu tempo elaborando páginas de
     <strong>HTML/CSS</strong>
-    para perfis em blogs e forums. E nessa mesma época, tive contato com a
-    criação de
+    para perfis em blogs e forums. E nessa mesma época, tive contato com a criação
+    de
     <strong>chatbots em python</strong>.
   </p>
   <p>
@@ -47,13 +47,14 @@
     display: flex;
     flex-flow: column nowrap;
     row-gap: 0.7rem;
-    font-size: px-to-rem(15px);
+    font-size: px-to-rem(17px);
     padding: 0 0.25rem;
   }
 
   p {
     font-weight: 300;
     line-height: px-to-rem(30px);
+    margin: 0.25rem 0;
   }
 
   strong {
@@ -68,6 +69,15 @@
     }
     section {
       padding: 0 4rem;
+    }
+  }
+
+  @media screen and (min-width: 1080px) {
+    section {
+      min-width: 700px;
+      max-width: 1200px;
+      width: 70%;
+      margin: 0 auto;
     }
   }
 </style>

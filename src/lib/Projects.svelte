@@ -14,10 +14,6 @@
 </script>
 
 <section class="container">
-  <p>
-    Eu amo desenvolver softwares, e ver meu trabalho ajudar é uma sensação
-    incrível!
-  </p>
   <section>
     {#await get}
       <Loading />
@@ -32,6 +28,10 @@
     {:catch error}
       <Broken />
     {/await}
+    <p>
+      Eu amo desenvolver softwares, e ver meu trabalho ajudar é uma sensação
+      incrível!
+    </p>
   </section>
 </section>
 
@@ -45,9 +45,19 @@
   }
 
   ul {
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 2rem;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    grid-auto-rows: 450px;
+
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 2rem;
+    margin: 0 auto;
+
+    min-width: 320px;
+    width: 100%;
   }
 
   .container {
@@ -56,34 +66,19 @@
   }
 
   @media screen and (min-width: 744px) {
-    .container {
-      margin-top: 30px;
-      min-width: 700px;
-
-      width: calc(100% - 50px);
+    ul {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.25rem;
     }
-
     p {
       font-size: px-to-rem(18px);
-    }
-
-    ul {
-      min-width: 600px;
-      width: calc(80%);
-      margin: 0 auto;
-      row-gap: 3.2rem;
     }
   }
 
   @media screen and (min-width: 1080px) {
-    .container {
-      min-width: 670px;
-      width: 1200px;
-    }
-
     ul {
-      margin-top: 50px;
-      row-gap: 5rem;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 420px));
+      gap: 3rem;
     }
   }
 </style>
